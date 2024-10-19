@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background: #005273;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+#co{
+    width: 200px;
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border:none;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #000;
+}
+#country-name{
+    font-weight: bold;
+    color: white;
+}
+.header{
+    width: 90%;
+    border: 2px solid white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 20px 20px 0px 0px;
+}
+.header .city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .city label{
+    margin-left: 10px;
+    color: #fff;
+}
+.header select{
+  align-self: center;
+}
+#date{
+    color: white;
+    padding: 10px;
+}
+#date h4{
+    margin-bottom: 10px;
+}
+.prayer{
+    width: 90%;
+    background-color: rgb(0 215 173);
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px ;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 10px;
+    width: 12%;
+   
+}
+.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    background-color: #005273;
+    color: white;
+    height: 20%;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+.card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    height: 80%;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+.timer h2{
+    color: #fff;
+}
+.clock,
+.timer{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.clock-card{
+   background-color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 3px;
+    position: relative;
+}
+.clock span{
+    font-size: 40px;
+    color: white;
+    margin-right: 3px;
+}
+.timer{
+    font-size: 20px;
+    font-weight: bold;
+   align-items: center;
+    margin-top: 30px;
+}
+.clock-card::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    left: 12px;
+}
+.clock-card:first-child::before{
+    content: "S";
+    color: #fff;
+    font-size: 20px;
+}
+.clock-card:nth-child(5)::before{
+    content: "H";
+    color: #fff;
+    font-size: 20px;
+}
+.clock-card:nth-child(3)::before{
+    content: "M";
+    color: #fff;
+    font-size: 20px;
+}
+
+@media(min-width: 601px) and (max-width: 1025px){
+    #country-name{
+        font-size: 30px;
+    }
+    .header .city label h5{
+        font-size: 25px;
+    }
+    .timer{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .card{
+        padding: 0;
+        width: 15%;
+    }
+    .card-content h2{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        direction: ltr;
+    }
+    #country-name,
+    #date,
+    .header .city label h5{
+        font-size: 12px;
+    }
+    #co{
+        width: 120px;
+        height: 40px;
+    }
+    .header .city,
+    .timer,
+    .clock{
+        flex-direction: row-reverse;
+    }
+    .header select{
+        text-align: start;
+        direction: rtl;
+    }
+    .prayer,
+    .timer{
+        flex-direction: column;
+    }
+    .prayer .card{
+        width: 70%;
+    }
+    .timer{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .timer h2{
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .clock-card::before{
+        left: 18px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Time</title>
+    <link rel="stylesheet" href="prayertime.css">
+</head>
+<body>
+        <div class="header">
+            <h1 id="country-name">
+                مواقيت الصلاه حسب التوقيت المحلي لمدينه القاهره
+            </h1>
+            <div id="date">
+            </div>
+            <div class="city">
+                <label for="co">
+                    <h5>اختر المدينه</h5>
+                </label>
+                <select name="country" id="co">
+                    
+                </select>
+            </div>
+        </div>
+        <div class="prayer">
+        </div>
+        <div class="timer">
+            <h2>التوقيت الحالي لمدينه القاهره</h2>
+            <div class="clock">
+                <div class="clock-card">
+                    00
+                </div>
+                <span>:</span>
+                <div class="clock-card">
+                    00
+                </div>
+                <span>:</span>
+                <div class="clock-card">
+                    00
+                </div>
+            </div>
+        </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="PrayerTime.js"></script>
+</body>
+</html>
