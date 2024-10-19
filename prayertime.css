@@ -154,7 +154,7 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 900px) and (min-width: 600px){
     #country-name{
-        font-size: 30px;
+        font-size: 25px;
     }
     .header .city label h5{
         font-size: 25px;
@@ -165,10 +165,10 @@ h1,h2,h3,h4,h5,h6{
     }
     .card{
         padding: 0;
-        width: 15%;
+        width: 18%;
     }
     .card-content h2{
-        font-size: 27px;
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 600px){
